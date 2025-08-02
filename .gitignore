@@ -1,0 +1,14 @@
+# Dependency directories
+node_modules/
+
+# Editor files
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+*.log

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty | Delfari Girls Computer School - Meet Our Educators</title>
+    <meta name="description" content="Meet Delfari's distinguished faculty - experienced educators and industry professionals dedicated to women's tech education in Nairobi.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header (Consistent with other pages) -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Delfari Girls</h1>
+                <p>Computer School</p>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="faculty.html" class="active">Faculty</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Faculty Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Meet Our Faculty</h1>
+            <p>Dedicated educators and industry experts guiding your tech journey</p>
+        </div>
+    </section>
+
+    <!-- Faculty Departments -->
+    <section class="section departments">
+        <div class="container">
+            <div class="section-title">
+                <h2>Academic Departments</h2>
+                <p>Specialized instruction across key technology disciplines</p>
+            </div>
+            <div class="dept-tabs">
+                <button class="dept-btn active" data-dept="all">All Faculty</button>
+                <button class="dept-btn" data-dept="development">Software Development</button>
+                <button class="dept-btn" data-dept="design">Digital Design</button>
+                <button class="dept-btn" data-dept="data">Data Science</button>
+                <button class="dept-btn" data-dept="business">Business Technology</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Grid -->
+    <section class="section faculty-listing bg-light">
+        <div class="container">
+            <!-- Leadership -->
+            <div class="faculty-group">
+                <h3 class="group-title">Academic Leadership</h3>
+                <div class="faculty-grid">
+                    <!-- Director -->
+                    <div class="faculty-card" data-dept="leadership" id="director">
+                        <div class="faculty-img">
+                            <img src="images/CEO.png" alt="Dr. Wanjiku Mwangi">
+                            <div class="faculty-badge">Director</div>
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Dr. Charity Cheruto</h3>
+                            <p class="faculty-title">Founder & School Director</p>
+                            <p class="faculty-edu">PhD Computer Science, University of Nairobi</p>
+                            <div class="faculty-bio">
+                                <p>With over 20 years in technology education, Dr. Mwangi founded Delfari Girls in 2010 to address the gender gap in Kenya's tech industry. Her research focuses on equitable STEM education access.</p>
+                            </div>
+                            <div class="faculty-expertise">
+                                <span class="expertise-tag">Education Policy</span>
+                                <span class="expertise-tag">Gender Studies</span>
+                                <span class="expertise-tag">Curriculum Design</span>
+                            </div>
+                            <a href="#director-modal" class="btn btn-small faculty-modal-btn">Full Profile</a>
+                        </div>
+                    </div>
+
+                    <!-- Principal -->
+                    <div class="faculty-card" data-dept="leadership" id="principal">
+                        <div class="faculty-img">
+                            <img src="images/testi.jpg" alt="Mrs. Auma Okello">
+                            <div class="faculty-badge">Principal</div>
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Mrs. Auma Okello</h3>
+                            <p class="faculty-title">Academic Principal</p>
+                            <p class="faculty-edu">MSc Software Engineering, JKUAT</p>
+                            <div class="faculty-bio">
+                                <p>Former senior developer at Safaricom, brings 15 years of industry and teaching experience. Spearheads our industry partnership programs and internship coordination.</p>
+                            </div>
+                            <div class="faculty-expertise">
+                                <span class="expertise-tag">Agile Methodologies</span>
+                                <span class="expertise-tag">Mobile Development</span>
+                                <span class="expertise-tag">Career Preparation</span>
+                            </div>
+                            <a href="#principal-modal" class="btn btn-small faculty-modal-btn">Full Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Development Department -->
+            <div class="faculty-group">
+                <h3 class="group-title">Software Development Faculty</h3>
+                <div class="faculty-grid">
+                    <!-- Web Dev Instructor -->
+                    <div class="faculty-card" data-dept="development">
+                        <div class="faculty-img">
+                            <img src="images/testi2.jpg" alt="Sarah Johnson">
+                            <div class="faculty-badge">Lead Instructor</div>
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Sarah Johnson</h3>
+                            <p class="faculty-title">Full Stack Development</p>
+                            <p class="faculty-edu">BSc Computer Science, Moi University</p>
+                            <div class="faculty-bio">
+                                <p>5 years experience building enterprise applications for African fintech companies. Specializes in JavaScript frameworks and API development.</p>
+                            </div>
+                            <div class="faculty-expertise">
+                                <span class="expertise-tag">React.js</span>
+                                <span class="expertise-tag">Node.js</span>
+                                <span class="expertise-tag">REST APIs</span>
+                            </div>
+                            <a href="#faculty1-modal" class="btn btn-small faculty-modal-btn">Full Profile</a>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Dev Instructor -->
+                    <div class="faculty-card" data-dept="development">
+                        <!-- Similar structure as above -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Department -->
+            <div class="faculty-group">
+                <h3 class="group-title">Digital Design Faculty</h3>
+                <div class="faculty-grid">
+                    <!-- UI/UX Instructor -->
+                    <div class="faculty-card" data-dept="design">
+                        <!-- Similar structure as above -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Science Department -->
+            <div class="faculty-group">
+                <h3 class="group-title">Data Science Faculty</h3>
+                <div class="faculty-grid">
+                    <!-- Data Analysis Instructor -->
+                    <div class="faculty-card" data-dept="data">
+                        <!-- Similar structure as above -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Spotlight -->
+    <section class="section faculty-spotlight">
+        <div class="container">
+            <div class="section-title">
+                <h2>Faculty Spotlight</h2>
+                <p>Get to know our educators</p>
+            </div>
+            <div class="spotlight-slider">
+                <div class="spotlight-slide active">
+                    <div class="spotlight-content">
+                        <div class="spotlight-img">
+                            <img src="images/2.jpg" alt="Faculty Spotlight">
+                        </div>
+                        <div class="spotlight-text">
+                            <h3>"Teaching is About Lighting Fires"</h3>
+                            <p class="spotlight-name">- Sarah Johnson, Lead Web Instructor</p>
+                            <p>"My approach focuses on project-based learning where students build real applications from day one. Seeing my students grow from complete beginners to confident developers is why I teach."</p>
+                            <div class="spotlight-stats">
+                                <div class="stat">
+                                    <strong>8</strong>
+                                    <span>Years Teaching</span>
+                                </div>
+                                <div class="stat">
+                                    <strong>120+</strong>
+                                    <span>Students Mentored</span>
+                                </div>
+                                <div class="stat">
+                                    <strong>15</strong>
+                                    <span>Industry Projects</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional spotlight slides -->
+            </div>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Philosophy -->
+    <section class="section philosophy bg-light">
+        <div class="container">
+            <div class="philosophy-content">
+                <div class="philosophy-text">
+                    <h2>Our Teaching Approach</h2>
+                    <p>At Delfari Girls, our faculty employs evidence-based pedagogical methods tailored for technical education:</p>
+                    <ul class="philosophy-list">
+                        <li>
+                            <i class="fas fa-laptop-code"></i>
+                            <div>
+                                <h4>Project-Based Learning</h4>
+                                <p>Students learn by building real applications, not just through lectures</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Peer Programming</h4>
+                                <p>Collaborative coding develops teamwork skills used in industry</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <div>
+                                <h4>Flipped Classroom</h4>
+                                <p>Lecture materials are reviewed at home, class time is for hands-on practice</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="philosophy-img">
+                    <img src="images/1.jpg" alt="Teaching at Delfari">
+                    <div class="img-quote">
+                        <p>"We don't just teach code - we teach problem-solving and confidence"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Modals -->
+    <!-- Director Modal -->
+    <div class="faculty-modal" id="director-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <div class="modal-img">
+                    <img src="images/CEO.png" alt="Dr. Wanjiku Mwangi">
+                </div>
+                <div class="modal-title">
+                    <h2>Dr. Charity Cheruto</h2>
+                    <p>Founder & School Director</p>
+                    <div class="modal-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-researchgate"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Academic Background</h3>
+                    <ul class="education-list">
+                        <li>
+                            <strong>PhD Computer Science</strong>
+                            <p>University of Nairobi, 2025</p>
+                            <p>Thesis: "Gender Disparities in Kenyan Computer Science Education"</p>
+                        </li>
+                        <li>
+                            <strong>MSc Information Systems</strong>
+                            <p>Strathmore University, 2002</p>
+                        </li>
+                        <li>
+                            <strong>BEd Science (Math/Physics)</strong>
+                            <p>Kenyatta University, 1996</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Professional Experience</h3>
+                    <ul class="experience-list">
+                        <li>
+                            <strong>Founder & Director</strong>
+                            <p>Delfari Girls Computer School | 2010-Present</p>
+                        </li>
+                        <li>
+                            <strong>Senior Lecturer</strong>
+                            <p>University of Nairobi, Computer Science Dept | 2004-2010</p>
+                        </li>
+                        <li>
+                            <strong>Systems Analyst</strong>
+                            <p>Kenya Airways | 1998-2002</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Publications & Research</h3>
+                    <ul class="publications-list">
+                        <li>"Breaking Barriers: Increasing Female Enrollment in Technical Programs" (2020)</li>
+                        <li>"Adaptive Learning Models for Diverse Classrooms" (2018)</li>
+                        <li>Co-author: "East Africa Tech Skills Gap Report" (2016)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Other modals would follow same structure -->
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Learn From The Best</h2>
+                <p>Our faculty are ready to help you achieve your tech career goals</p>
+                <div class="cta-btns">
+                    <a href="courses.html" class="btn">Explore Courses</a>
+                    <a href="contact.html" class="btn btn-outline">Meet With an Instructor</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Consistent with other pages) -->
+    <footer class="footer">
+        <!-- Same footer content as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/faculty.js"></script>
+</body>
+</html>
